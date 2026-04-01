@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="date">Effective Date: March 29, 2026</p>
+<p class="date">Effective Date: April 1, 2026</p>
 
 <p>GlowUp ("we", "our", "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use the GlowUp mobile application ("App").</p>
 
@@ -41,8 +41,15 @@
 
 <h2>3. Face Data Collection, Use, and Retention</h2>
 <p><strong>What face data we collect:</strong> When you use the facial analysis feature, the App captures or receives a single photo of your face via the device camera or photo library. The photo is converted to a base64-encoded image on your device and transmitted securely (via HTTPS/TLS) to our backend server for processing.</p>
-<p><strong>How face data is used:</strong> Your face photo is sent to OpenAI's GPT-4o API for AI-powered facial analysis. The AI evaluates facial features across categories such as symmetry, jawline definition, skin quality, grooming, and style. The analysis produces numerical scores (0-100), text-based strengths and improvement suggestions, and celebrity look-alike matches. The photo itself is used solely for this one-time analysis.</p>
-<p><strong>Third-party sharing:</strong> Your face photo is transmitted to OpenAI (https://openai.com) for AI processing. OpenAI processes the image in real-time to generate the analysis. Per OpenAI's API data usage policy, API inputs are not used to train their models and are retained for up to 30 days for abuse monitoring purposes before being deleted. No other third parties receive your face photo.</p>
+<p><strong>How face data is used:</strong> Your face photo is sent to <strong>OpenAI's GPT-4.1-mini API</strong> (with vision capabilities) for AI-powered facial analysis. The AI evaluates facial features across categories such as symmetry, jawline definition, skin quality, grooming, and style. The analysis produces numerical scores (0-100), text-based strengths and improvement suggestions, and celebrity look-alike matches. The photo itself is used solely for this one-time analysis.</p>
+<p><strong>Third-party sharing — OpenAI:</strong> Your face photo is transmitted to <strong>OpenAI</strong> (<a href="https://openai.com">https://openai.com</a>) for AI processing. OpenAI processes the image to generate the analysis.</p>
+<ul>
+  <li><strong>Does OpenAI store face data?</strong> OpenAI may temporarily retain API inputs (including your face photo) for up to <strong>30 days</strong>. After 30 days, the data is automatically deleted.</li>
+  <li><strong>Why does OpenAI retain data for 30 days?</strong> OpenAI retains API data temporarily solely for abuse and misuse monitoring — to detect harmful content, prevent platform misuse, and ensure safety. This retention period is required by OpenAI's operational policies and cannot be shortened by GlowUp.</li>
+  <li><strong>Is face data used to train AI models?</strong> No. Per OpenAI's <a href="https://openai.com/policies/api-data-usage-policies">API Data Usage Policy</a>, API inputs and outputs are <strong>not used to train OpenAI's models</strong>.</li>
+  <li><strong>OpenAI's privacy practices:</strong> OpenAI is committed to data protection and does not sell API user data. OpenAI implements industry-standard security measures to protect data during the temporary retention period. For full details, review OpenAI's <a href="https://openai.com/policies/privacy-policy">Privacy Policy</a> and <a href="https://openai.com/policies/api-data-usage-policies">API Data Usage Policy</a>.</li>
+</ul>
+<p>No other third parties receive your face photo.</p>
 <p><strong>Data storage:</strong> Face photos are NOT stored on our servers. The photo exists in server memory only during the brief processing window (typically under 30 seconds) and is immediately discarded after the AI analysis completes. Only the resulting text-based analysis data (scores, recommendations, category breakdowns) is saved to your account in our database. The original photo remains only on your local device.</p>
 <p><strong>Data retention:</strong> Since face photos are not stored on our servers, there is no server-side retention of face images. The analysis results (scores and text) are retained as long as your account is active and are permanently deleted when you delete your account. The photo file on your local device is managed by your device's storage and is not controlled by the App.</p>
 <p><strong>AI consent:</strong> Before your first facial analysis, the App displays a consent modal explaining that your photo will be processed by AI. You must explicitly consent before proceeding. AI-generated scores and recommendations are for entertainment and self-improvement purposes only and should not be considered medical, psychological, or professional advice.</p>
